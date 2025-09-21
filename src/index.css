@@ -1,0 +1,296 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* @custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --animate-background-position-spin: background-position-spin 3000ms infinite alternate;
+  @keyframes background-position-spin {
+  0% {
+    background-position: top center;
+    }
+  100% {
+    background-position: bottom center;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* @theme inline {
+  --animate-shine: shine var(--duration) infinite linear;
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;
+    }
+  50% {
+    background-position: 100% 100%;
+    }
+  to {
+    background-position: 0% 0%;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
+
+.bg-brand-cyan {
+  background: #22AED7;
+}
+
+.text-cyan{
+  color:#22AED7
+}
+
+.bg-brand-teal {
+  background: #00FFEF;
+}
+
+.text-teal{
+  color: #00FFEF;
+}
+
+
+.bg-brand-aqua {
+  background: #09EAE0;
+}
+
+.text-aqua {
+  color: #09EAE0;
+}
+
+
+.bg-brand-blue {
+  background: #009EE2;
+}
+
+.text-blue{
+  color: #009EE2;
+}
+
+.bg-purple{
+  background-color: #6F2DA8;
+}
+.text-purple{
+  color: #6F2DA8;
+}
+
+
+.bg-light{
+  background: #D19FE8;
+}
+
+.text-light{
+  color: #D19FE8;
+}
+
+.bg-green{
+  background: #2AF598;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.custom-phone-input {
+  display: flex;
+  align-items: center;
+  background: #F5F5F5;
+  border: 1px solid #505050;
+  border-radius: 50px;
+  padding: 8px;
+  font-size: 12px;
+  color: white;
+  /* width: 280px; */
+}
+
+
+
+.custom-phone-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: gray;
+  flex: 1;
+  
+  /* padding: 6px; */
+}
+
+
+.custom-phone-input input:focus {
+  border: none;
+  outline: none;
+}
+
+.custom-phone-input input::placeholder {
+  color: #7F7F7F;
+}
+
+.PhoneInputCountry {
+  margin-right: 6px;
+}
+
+.PhoneInputCountryIcon {
+  width: 22px;
+  height: 16px;
+  border-radius: 100%;
+}
+
+.PhoneInputCountrySelectArrow {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
