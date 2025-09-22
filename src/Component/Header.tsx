@@ -193,9 +193,20 @@ export default function Header() {
 
           {/* About */}
           <div className="border-b border-gray-400 pb-2">
+            <Link to={"/"}>
+             <button
+              onClick={handleLinkClick}
+              className="flex justify-between items-center w-full px-4 py-2 font-bold"
+              >
+              Home 
+              
+            </button>
+              </Link>
+          </div>
+          <div className="border-b border-gray-400 pb-2">
             <button
               onClick={() => toggleSubmenu("about")}
-              className="flex justify-between items-center w-full px-4 py-2 font-bold hover:bg-zinc-700"
+              className="flex justify-between items-center w-full px-4 py-2 font-bold"
             >
               About Us
               <span>{openMenu === "about" ? "−" : "+"}</span>
@@ -206,25 +217,25 @@ export default function Header() {
               }`}
             >
               <a
-                href="/about#Mission"
-                onClick={handleLinkClick}
-                className="px-4 py-2 hover:bg-zinc-700"
-              >
-                Mission
-              </a>
-              <a
                 href="/about#Vision"
                 onClick={handleLinkClick}
-                className="px-4 py-2 hover:bg-zinc-700"
+                className="px-4 py-2 "
               >
                 Vision
               </a>
               <a
+                href="/about#Mission"
+                onClick={handleLinkClick}
+                className="px-4 py-2 "
+              >
+                Mission
+              </a>
+              <a
                 href="/about#Pillors"
                 onClick={handleLinkClick}
-                className="px-4 py-2 hover:bg-zinc-700"
+                className="px-4 py-2"
               >
-                Pillors
+                Foundation & Pillars
               </a>
             </div>
           </div>
@@ -233,7 +244,7 @@ export default function Header() {
           <div className="border-b border-gray-400 pb-2">
             <button
               onClick={() => toggleSubmenu("products")}
-              className="flex justify-between items-center w-full px-4 py-2 font-bold hover:bg-zinc-700"
+              className="flex justify-between items-center w-full px-4 py-2 font-bold "
             >
               Products
               <span>{openMenu === "products" ? "−" : "+"}</span>
@@ -246,26 +257,33 @@ export default function Header() {
               <Link
                 to="/trace-tag"
                 onClick={handleLinkClick}
-                className="px-4 py-2 hover:bg-zinc-700"
+                className="px-4 py-2 "
               >
                 Digital Product Passport
               </Link>
               <Link
                 to="/engage-pulse"
                 onClick={handleLinkClick}
-                className="px-4 py-2 hover:bg-zinc-700"
+                className="px-4 py-2 "
               >
                 Employee Engagement Tool
               </Link>
               <Link
                 to="/xlync"
                 onClick={handleLinkClick}
-                className="px-4 py-2 hover:bg-zinc-700"
+                className="px-4 py-2 "
               >
                 Data Exchange
               </Link>
             </div>
           </div>
+          <div className="w-full mt-4 lg:hidden">
+          <Link to={"/contact-us"} onClick={handleLinkClick}>
+            <InteractiveHoverButton className="w-full flex justify-center bg-brand-cyan border-blue-400 text-white">
+              Contact Us
+            </InteractiveHoverButton>
+          </Link>
+        </div>
 
 {/* 
           <div className="border-b border-gray-700 pb-2">

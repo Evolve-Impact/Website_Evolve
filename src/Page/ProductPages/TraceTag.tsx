@@ -13,12 +13,14 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import WorldMap from "../../Component/WorldMap";
 // import { NumberTicker } from "../../components/magicui/number-ticker";
 import post from "../../assets/Instagram post - 1.png";
-import bag from "../../assets/bag.png";
-import shirt from "../../assets/shirt.png";
+// import bag from "../../assets/bag.png";
+// import shirt from "../../assets/shirt.png";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ShineBorder } from "../../components/magicui/shine-border";
+import shirt from "../../assets/Instagram post - 12.png"
+import bag from "../../assets/Instagram post - 11.png"
 
 interface ProductData {
   title: string;

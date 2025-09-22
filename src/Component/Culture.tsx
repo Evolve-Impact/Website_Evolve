@@ -23,7 +23,7 @@ const features = {
     Icon: <FaUsers/>,
     name: "About Us",
     description:"<span><GiButterfly/></span> We are <b>Evolvepers.</b> <br/>  We bridge <b>business insight with advanced technologies</b>  — AI, blockchain, cloud, and automation — to create solutions that help corporations lead responsibly in a world of change. <br/> We carry <b>sustainability, integrity, and trust</b> at the core of everything we do.",
-    href: "/about-us",
+    href: "/about",
     cta: "Explore more",
     background: (
       <>
@@ -73,9 +73,9 @@ export default function Culture() {
       <div className="max-w-7xl mx-auto font-montserrat-light">
         <MotionFadeIn>
  
-          <div className="grid lg:grid-cols-2 lg:text-left text-center relative">
+          <div className="grid lg:grid-cols-2 lg:text-left items-center text-center relative">
           
-                <div className=" flex flex-col justify-between ">
+                <div className=" flex flex-col ">
                    <TextAnimate
               animation="blurInUp"
               by="character"
@@ -99,7 +99,7 @@ export default function Culture() {
 
                   <motion.div
                       ref={ref} // 🔑 make sure ref is attached so useInView works
-                      className="absolute"
+                      className=""
                       initial="hidden"
                       animate={controls}
                       variants={{

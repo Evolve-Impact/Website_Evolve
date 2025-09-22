@@ -93,15 +93,15 @@ const Footer = () => {
                 About Us
               </h3>
               <ul className="space-y-1 flex flex-col">
-                <Link to="/about#Vision" className="hover:text-blue-500 transition ">
+                <a href="/about#Vision" className="hover:text-blue-500 transition ">
                       Vision
-                </Link>
-                <Link to="/about#Mission" className="hover:text-blue-500 transition ">
+                </a>
+                <a href="/about#Mission" className="hover:text-blue-500 transition ">
                   Mission
-                </Link>
-                <Link to="/about#Pillors" className="hover:text-blue-500 transition ">
+                </a>
+                <a href="/about#Pillors" className="hover:text-blue-500 transition ">
                   Pillars
-                </Link>
+                </a>
               </ul>
             </div>
           </div>
